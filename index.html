@@ -30,6 +30,22 @@
             text-align: center;
             margin-top: 20px;
         }
+        /* Animowany przycisk ZAPISZ SIĘ */
+        .sign-up-link {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            color: yellow;
+            display: block;
+            text-decoration: none;
+            margin-top: 20px;
+            animation: color-change 0.5s infinite;
+        }
+        @keyframes color-change {
+            0% { color: yellow; }
+            50% { color: red; }
+            100% { color: yellow; }
+        }
         /* Sekcja z logo */
         .footer-logo {
             display: flex;
@@ -38,8 +54,15 @@
             margin-top: 20px;
         }
         .footer-logo img {
-            max-width: 200px;
+            width: 100px;
             height: auto;
+        }
+        /* Tekst informacyjny nad logo */
+        .disclaimer {
+            font-size: 0.8em;
+            text-align: center;
+            color: gray;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -82,6 +105,13 @@
         Chcesz dołączyć? Napisz do nas: <a href="https://www.facebook.com/WRS.WAPW" target="_blank">https://www.facebook.com/WRS.WAPW</a>
     </p>
 
+    <!-- Animowany link ZAPISZ SIĘ -->
+    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=nCJQO3jNiEWbz5e3Yp4vD_0fFU_Akn1JgkusJPp_D9lUME1TMUpRMkszQjI2RE0yUUlKWFc5WktSOS4u" 
+       class="sign-up-link" target="_blank">ZAPISZ SIĘ (klik)</a>
+
+    <!-- Tekst informacyjny nad logo -->
+    <p class="disclaimer">organizacje, z którymi nie mamy nic wspólnego</p>
+
     <!-- Logo PW i SARP -->
     <div class="footer-logo">
         <img src="https://www.ch.pw.edu.pl/var/ch/storage/images/media/images/logo-pw/14895-2-pol-PL/logo-PW.png" alt="Logo Politechniki Warszawskiej">
@@ -89,3 +119,4 @@
     </div>
 </body>
 </html>
+
